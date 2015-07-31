@@ -1,8 +1,0 @@
-function lotto ( source, command )
-	if ( isObjectInACLGroup ( "user." .. getAccountName ( getPlayerAccount ( source )), aclGetGroup ( "Admin" ) ) ) then
-				outputChatBox ( "Rozpoczales losowanie.", source, 255, 0, 0 )
-        local randomPlayer = getRandomPlayer ( )
-        outputChatBox ( getPlayerName ( randomPlayer ).." Wygral losowanie!" )
-	end
-end
-addCommandHandler ( "losowanie", lotto )
